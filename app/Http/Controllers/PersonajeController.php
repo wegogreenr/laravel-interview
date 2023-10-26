@@ -10,7 +10,7 @@ class PersonajeController extends Controller
     
     public function getPersonajes()
     {
-        $personajes = Personaje::all();
+        //$personajes = Personaje::all();
     }
 
   
@@ -26,7 +26,7 @@ class PersonajeController extends Controller
 
 
     public function getPersonajesExample(){
-      
+       
         $client = new Client();
         $response = $client->request('GET', 'https://rickandmortyapi.com/api/character');
 

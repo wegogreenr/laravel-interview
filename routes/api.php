@@ -20,9 +20,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('personaje', [PersonajeController::class, 'index']);
+Route::get('personaje', [PersonajeController::class, 'getPersonajes']);
 Route::post('personaje-add', [PersonajeController::class, 'addPersonajes']);
 Route::post('personaje-edit', [PersonajeController::class, 'update']);
-Route::get('personajes-api', [PersonajeController::class, 'getPersonajes']);
+Route::get('personajes-api', [PersonajeController::class, 'getPersonajesExample']);
 
 
