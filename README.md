@@ -2,7 +2,7 @@
 
 ## Objetivo:
 
-Crear una API para guardar y mostrar  los personajes favoritos de un usuario.
+## About Laravel.
 
 ## Recursos:
 
