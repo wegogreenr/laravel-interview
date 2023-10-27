@@ -13,11 +13,10 @@ return new class extends Migration
     {
         Schema::create('personajes', function (Blueprint $table) {
             $table->id();
+            $table->integer('id_api')->nullable();
             $table->string('name')->nullable();
-            $table->string('species')->nullable();
-            $table->string('gender')->nullable();
-            $table->string('origin')->nullable();
-            $table->string('image')->nullable();
+            $table->string('origin_name')->nullable();
+            $table->integer('order')->nullable();
             $table->timestamps();
         });
     }
